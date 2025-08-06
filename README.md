@@ -1,2 +1,2 @@
 # GoFundMe
-To help a Palestinians 
+To help a Palestinian family 
