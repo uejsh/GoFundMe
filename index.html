@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FundMe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>FundMe</h1>
+    <p>Help change lives, one donation at a time.</p>
+  </header>
 
+  <main>
+    <!-- Campaign -->
+    <section class="campaign">
+      <img src="https://via.placeholder.com/400x200" alt="Campaign Image">
+      <h2>Help A Palestinian Girl</h2>
+      <p>We are raising funds to support a young girl affected by the crisis. Your help will make a difference.</p>
+      <progress value="250" max="1000"></progress>
+      <p>$250 raised of $1000 goal</p>
+
+      <!-- Donation Form -->
+      <form id="donationForm">
+        <input type="number" id="amount" placeholder="Enter amount (USD)" required>
+        <button type="submit">Donate</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 FundMe. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
