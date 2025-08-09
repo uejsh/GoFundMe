@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Help Khadijah and Her Family in Gaza</title>
+  <meta name="description" content="Support Khadijah and her family in Gaza by donating. Read her story, watch her poem video, and share with others." />
+  <meta property="og:title" content="Help Khadijah and Her Family in Gaza" />
+  <meta property="og:description" content="Support Khadijah and her family in Gaza by donating. Read her story, watch her poem video, and share with others." />
+  <meta property="og:image" content="https://i.postimg.cc/90D2L34t/E4398-C33-8-F1-F-44-DC-9739-0-DD3-D673389-A.png" />
+  <meta property="og:url" content="https://gofundme1.netlify.app/" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.7;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    p {
+      margin-bottom: 1.3em;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .video-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+    iframe, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .qr-section {
+      text-align: center;
+      margin: 40px 0 20px 0;
+    }
+    .qr-section img {
+      max-width: 250px;
+      width: 100%;
+      height: auto;
+      border: 2px solid #333;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .donate-instructions {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: #007700;
+      margin-top: 15px;
+    }
+    .wallet-address {
+      margin: 15px auto 10px auto;
+      padding: 10px 15px;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #eee;
+      border-radius: 6px;
+      width: fit-content;
+      user-select: all;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      cursor: text;
+    }
+    .copy-button {
+      display: block;
+      margin: 10px auto 5px auto;
+      padding: 10px 25px;
+      background-color: #007700;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 102, 0, 0.6);
+    }
+    .copy-button:hover,
+    .copy-button:focus {
+      background-color: #005500;
+      outline: none;
+    }
+    .copy-message {
+      text-align: center;
+      color: green;
+      font-weight: 700;
+      margin-bottom: 15px;
+      visibility: hidden;
+    }
+    .donate-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .donate-btn {
+      background-color: #007700;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 102, 0, 0.6);
+      transition: background-color 0.3s ease;
+    }
+    .donate-btn:hover,
+    .donate-btn:focus {
+      background-color: #005500;
+      outline: none;
+    }
+    .donation-note {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 0.9rem;
+    }
+    .call-to-action {
+      text-align: center;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: #b22222;
+      margin-top: 50px;
+    }
+    .updates-section {
+      background: #e9f5e9;
+      border: 2px solid #007700;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 50px 0 30px 0;
+      text-align: center;
+    }
+    .updates-section h2 {
+      margin-bottom: 15px;
+      color: #007700;
+    }
+    .updates-section p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .updates-section a {
+      background-color: #007700;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 6px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 102, 0, 0.6);
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .updates-section a:hover,
+    .updates-section a:focus {
+      background-color: #005500;
+      outline: none;
+    }
+    .share-section {
+      text-align: center;
+      margin: 40px 0;
+      background: #fff3cd;
+      border: 2px solid #ffcc00;
+      border-radius: 8px;
+      padding: 20px;
+    }
+    .share-section h2 {
+      color: #b26b00;
+      margin-bottom: 10px;
+    }
+    .contact-link {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .contact-link a {
+      background: #4267B2;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 6px rgba(66, 103, 178, 0.7);
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .contact-link a:hover,
+    .contact-link a:focus {
+      background-color: #365899;
+      outline: none;
+    }
+    .honesty-note {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+      font-style: italic;
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .host-note {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #555;
+      text-align: center;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (max-width: 480px) {
+      body {
+        padding: 15px;
+        margin: 15px auto;
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .donate-instructions,
+      .call-to-action,
+      .updates-section h2 {
+        font-size: 1.1rem;
+      }
+      .wallet-address {
+        font-size: 1rem;
+        padding: 8px 10px;
+      }
+      .copy-button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+      .donate-btn,
+      .updates-section a {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+      }
+      .contact-link a {
+        font-size: 1rem;
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Help Khadijah and Her Family in Gaza</h1>
+
+  <p>Khadijah dreamed of becoming a translator. She studied English literature with passion, imagining a future where she could bridge worlds through language.</p>
+  <p>All the mysteries of Agatha Christie’s that before had captivated her, now she finds herself in a mystery of her own.</p>
+  <p>A world that had been before so welcoming was now riddled with bullets and survival.</p>
+  <p>“My mum doesn’t let my dad go.”</p>
+  <p>The only aid they get results in public shootings, so they resort to begging for help.</p>
+  <p>“It’s pride or survival.”</p>
+  <p>Once, she was the cherished only daughter in her family… pampered and loved. But times have changed.</p>
+
+  <p>Today, Khadijah sells her gold jewelry to provide food for her younger brothers. Her family’s survival depends on her courage and sacrifice.</p>
+
+  <p>In a desperate act of hope, Khadijah walked 10 kilometers under the scorching sun, surrounded by a bunch of men, parched and exhausted. Driven by an unquenchable thirst and a heart full of resolve, she willingly handed herself over to the Israeli authorities — all for the chance to reunite with her family.</p>
+
+  <p>In the midst of it all Khadijah still transliterates poems, poems that shatter deep into your soul.</p>
+  <p>“Should I kill myself or have a cup of coffee?”</p>
+  <p>“In dreams you will lose your heartache.”</p>
+  <p>It’s raw, unfiltered, and the most human thing I’ve ever felt ever.</p>
+
+  <p>“No one helps,” she said. The world turns a blind eye to her struggle.</p>
+  <p>But will you?</p>
+
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/10zYS5XkMGw" 
+      title="Khadijah singing a poem" frameborder="0" allowfullscreen></iframe>
+  </div>
+
+  <div class="qr-section">
+    <img src="https://i.postimg.cc/90D2L34t/E4398-C33-8-F1-F-44-DC-9739-0-DD3-D673389-A.png" alt="Binance Wallet QR Code for Donations" />
+    <div class="donate-instructions">
+      Scan this QR code with Binance or any Binance Smart Chain compatible wallet to donate.
+    </div>
+    <div class="wallet-address" id="walletAddress">
+      TRLPp5WRyfGcrv4497Qv9vmhhKeZ9ifr8
+    </div>
+    <button class="copy-button" onclick="copyWalletAddress()">Copy Wallet Address</button>
+    <div id="copyMessage" class="copy-message">Address copied!</div>
+
+    <div class="donate-buttons">
+      <a href="https://www.binance.com/en/my/wallet/account/crypto?to=TRLPp5WRyfGcrv4497Qv9vmhhKeZ9ifr8" target="_blank" class="donate-btn">Donate via Binance</a>
+      <a href="https://metamask.app.link/send?address=TRLPp5WRyfGcrv4497Qv9vmhhKeZ9ifr8" target="_blank" class="donate-btn">Donate via MetaMask</a>
+      <a href="trust://wallet_send?address=TRLPp5WRyfGcrv4497Qv9vmhhKeZ9ifr8" target="_blank" class="donate-btn">Donate via Trust Wallet</a>
+      <a href="https://go.cb-w.com/send?address=TRLPp5WRyfGcrv4497Qv9vmhhKeZ9ifr8" target="_blank" class="donate-btn">Donate via Coinbase Wallet</a>
+    </div>
+
+    <div class="donation-note">
+      All donations go directly to Khadijah’s dad.
+    </div>
+  </div>
+
+  <div class="share-section">
+    <h2>Can't Donate? You Can Still Help!</h2>
+    <p>If you cannot donate, please share this page with at least <strong>three more people</strong> — every share can save a life.</p>
+    <p>Also, support Khadijah's art by following her poetry channel:</p>
+    <a href="https://whatsapp.com/channel/0029Vb6RNtWBVJl8xWMNLu1i" target="_blank" style="color:#007700;font-weight:bold;">📜 Join Her Poetry Channel</a>
+  </div>
+
+  <div class="call-to-action">
+    Make the difference — donate or share now.
+  </div>
+
+  <div class="updates-section">
+    <h2>Weekly Updates</h2>
+    <p>Stay connected and see how your donations are making a real impact. For weekly updates, join our WhatsApp group:</p>
+    <a href="https://chat.whatsapp.com/GvaGVjkTVYCHSGllEodgmm?mode=ac_t" target="_blank">Join Weekly Updates Group</a>
+  </div>
+
+  <div class="contact-link">
+    <a href="mailto:hehehhdhd93@gmail.com" target="_blank" style="background:#007700;">
+      Contact the creator via email
+    </a>
+  </div>
+
+  <div class="honesty-note">
+    This fundraiser is not an official charity but an individual initiative I decided to help make out of compassion and hope.
+  </div>
+
+  <div class="host-note">
+    The site is hosted on Netlify to ensure 100% of donations go directly to Khadijah’s family. We use Binance because other forms of payments are less reliable in Gaza.
+  </div>
+
+  <script>
+    function copyWalletAddress() {
+      const address = document.getElementById('walletAddress').innerText;
+      navigator.clipboard.writeText(address)
+        .then(() => {
+          const msg = document.getElementById('copyMessage');
+          msg.style.visibility = 'visible';
+          setTimeout(() => {
+            msg.style.visibility = 'hidden';
+          }, 1500);
+        })
+        .catch(() => {
+          alert('Failed to copy. Please copy manually.');
+        });
+    }
+  </script>
+
+</body>
+</html>
